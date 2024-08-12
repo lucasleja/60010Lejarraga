@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import data from '../data/productos.json'
 
@@ -28,8 +28,10 @@ export const ItemListContainer = () => {
 if (loading) return "wait";
 
     return  (
-    <Container className="mt-4">
+    <Container className="mt-4 mb-4">
+      <Row>
       {items.map((i) => (
+        <Col key={i.id} xs={12} sm={4} md={3} lg={2.4} xl={1.5}>
       <Card key={i.id} style={{ width: '18rem' }} className="mt-2">
       <Card.Img variant="top" src={i.img} />
       <Card.Body>
@@ -41,6 +43,8 @@ if (loading) return "wait";
 </Link>
       </Card.Body>
     </Card> 
-  ))}
+    </Col>
+  ))};
+  </Row>
   </Container>
     );}

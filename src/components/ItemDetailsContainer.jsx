@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import Container from 'react-bootstrap/Container';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import data from '../data/productos.json'
 
