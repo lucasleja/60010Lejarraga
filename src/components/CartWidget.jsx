@@ -1,12 +1,9 @@
 import cart  from "../assets/cart.png";
 
 export const CartWidget = ()=> {
-    return (
+  return (
     <>
-    <img src={cart} height={24} />
-    <span>
-        4
-        </span>
+      <img src={cart} height={20} />4
     </>
     );
 };

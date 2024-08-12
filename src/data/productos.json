@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "categoria": "mtb",
+    "marca": "Specialized",
+    "linea": "rockhopper",
+    "modelo": "sport",
+    "stock": 25,
+    "precio": 800000,
+    "img": "./src/assets/images/specialized/1.webp",
+    "detalle": "Bicicleta MTB Rockhopper Sport de Specialized, diseñada para senderos y terrenos irregulares con un enfoque en la comodidad y el rendimiento. Ideal para ciclistas que buscan una experiencia versátil y confiable."
+  },
+  {
+    "id": 2,
+    "categoria": "mtb",
+    "marca": "Specialized",
+    "linea": "epic",
+    "modelo": "comp carbon",
+    "stock": 15,
+    "precio": 3000000,
+    "img": "./src/assets/images/specialized/2.webp",
+    "detalle": "Bicicleta MTB Epic Comp Carbon de Specialized, una opción ligera y resistente para competencias de alto nivel. Combina tecnología avanzada con un diseño aerodinámico para ofrecer velocidad y eficiencia."
+  },
+  {
+    "id": 3,
+    "categoria": "elec",
+    "marca": "Specialized",
+    "linea": "turbo Levo",
+    "modelo": "comp carbon",
+    "stock": 10,
+    "precio": 5000000,
+    "img": "./src/assets/images/specialized/3.webp",
+    "detalle": "Bicicleta eléctrica Turbo Levo Comp Carbon de Specialized, potente y eficiente para largas distancias. Incorpora una batería de larga duración y un motor potente para asistir en subidas empinadas."
+  },
+  {
+    "id": 4,
+    "categoria": "mtb",
+    "marca": "Specialized",
+    "linea": "rockhopper",
+    "modelo": "expert",
+    "stock": 15,
+    "precio": 4000000,
+    "img": "./src/assets/images/specialized/4.webp",
+    "detalle": "Bicicleta MTB Rockhopper Expert de Specialized, versátil y duradera para aventuras en la montaña. Con componentes de alta calidad y un diseño robusto, es perfecta para ciclistas que buscan rendimiento en cualquier terreno."
+  },
+  {
+    "id": 5,
+    "categoria": "ruta",
+    "marca": "Specialized",
+    "linea": "tarmac",
+    "modelo": "sl6",
+    "stock": 20,
+    "precio": 5000000,
+    "img": "./src/assets/images/specialized/5.webp",
+    "detalle": "Bicicleta de ruta Tarmac SL6 de Specialized, diseñada para velocidad y rendimiento en carretera. Su marco ligero y aerodinámico garantiza una conducción eficiente y cómoda durante largas jornadas."
+  },
+  {
+    "id": 6,
+    "categoria": "ruta",
+    "marca": "Specialized",
+    "linea": "tarmac",
+    "modelo": "sl7",
+    "stock": 5,
+    "precio": 5000000,
+    "img": "./src/assets/images/specialized/6.webp",
+    "detalle": "Bicicleta de ruta Tarmac SL7 de Specialized, la elección perfecta para ciclistas exigentes. Ofrece una combinación excepcional de ligereza, rigidez y confort, ideal para competencias y entrenamientos intensivos."
+  },
+  {
+    "id": 7,
+    "categoria": "mtb",
+    "marca": "Cannondale",
+    "linea": "trial",
+    "modelo": "7",
+    "stock": 25,
+    "precio": 800000,
+    "img": "./src/assets/images/cannondale/7.jpg",
+    "detalle": "Bicicleta MTB Cannondale Trial 7, robusta y confiable para terrenos desafiantes. Con un diseño sólido y componentes duraderos, es ideal para aquellos que buscan aventura y diversión en cualquier tipo de terreno."
+  },
+  {
+    "id": 8,
+    "categoria": "mtb",
+    "marca": "Cannondale",
+    "linea": "trial",
+    "modelo": "5",
+    "stock": 14,
+    "precio": 3000000,
+    "img": "./src/assets/images/cannondale/8.jpg",
+    "detalle": "Bicicleta MTB Cannondale Trial 5, equilibrando rendimiento y comodidad. Diseñada para ofrecer una experiencia de conducción suave y eficiente, es perfecta para ciclistas que valoran la versatilidad."
+  },
+  {
+    "id": 9,
+    "categoria": "mtb",
+    "marca": "Cannondale",
+    "linea": "trial",
+    "modelo": "se4",
+    "stock": 20,
+    "precio": 5000000,
+    "img": "./src/assets/images/cannondale/9.jpg",
+    "detalle": "Bicicleta MTB Cannondale Trial SE4, diseñada para senderos técnicos y descensos rápidos. Su construcción robusta y componentes de alta calidad la hacen ideal para ciclistas que buscan rendimiento en terrenos difíciles."
+  },
+  {
+    "id": 10,
+    "categoria": "ruta",
+    "marca": "Cannondale",
+    "linea": "caad",
+    "modelo": "12",
+    "stock": 16,
+    "precio": 4000000,
+    "img": "./src/assets/images/cannondale/10.jpg",
+    "detalle": "Bicicleta de ruta Cannondale CAAD12, ligera y ágil para entrenamientos intensivos. Con un marco que combina rigidez y comodidad, es la elección perfecta para ciclistas que buscan mejorar su rendimiento en carretera."
+  },
+  {
+    "id": 11,
+    "categoria": "ruta",
+    "marca": "Cannondale",
+    "linea": "caad",
+    "modelo": "optimo",
+    "stock": 2,
+    "precio": 5000000,
+    "img": "./src/assets/images/cannondale/11.jpg",
+    "detalle": "Bicicleta de ruta Cannondale CAAD Optimo, la combinación perfecta de estilo y rendimiento. Diseñada con un enfoque en la eficiencia y el diseño elegante, es ideal para ciclistas que valoran tanto la funcionalidad como la estética."
+  },
+  {
+    "id": 12,
+    "categoria": "ruta",
+    "marca": "Cannondale",
+    "linea": "caad",
+    "modelo": "13",
+    "stock": 20,
+    "precio": 5000000,
+    "img": "./src/assets/images/cannondale/12.jpg",
+    "detalle": "Bicicleta de ruta Cannondale CAAD13, para aquellos que buscan velocidad sin sacrificar la comodidad. Con un marco avanzado y componentes de alta calidad, ofrece un equilibrio perfecto entre rendimiento y confort."
+  },
+  {
+    "id": 13,
+    "categoria": "mtb",
+    "marca": "trek",
+    "linea": "marlin",
+    "modelo": "8",
+    "stock": 20,
+    "precio": 2000000,
+    "img": "./src/assets/images/trek/13.jpg",
+    "detalle": "Bicicleta MTB Trek Marlin 8, ideal para principiantes y aficionados por igual. Con un diseño accesible y características versátiles, es perfecta para explorar senderos y terrenos variados con confianza."
+  },
+  {
+    "id": 14,
+    "categoria": "mtb",
+    "marca": "Trek",
+    "linea": "xcaliber",
+    "modelo": "8",
+    "stock": 30,
+    "precio": 2500000,
+    "img": "./src/assets/images/trek/14.jpg",
+    "detalle": "Bicicleta MTB Trek X-Caliber 8, versátil y eficiente en cualquier terreno. Diseñada para ofrecer una experiencia de conducción excepcional en condiciones variadas, es ideal para ciclistas que buscan rendimiento y diversión."
+  },
+  {
+    "id": 15,
+    "categoria": "ruta",
+    "marca": "Trek",
+    "linea": "emondal",
+    "modelo": "pro",
+    "stock": 10,
+    "precio": 8000000,
+    "img": "./src/assets/images/trek/15.jpg",
+    "detalle": "Bicicleta de ruta Trek Emonda Pro, la elección de los profesionales para competencias. Con un marco ultraligero y componentes de alta tecnología, es la bicicleta perfecta para aquellos que aspiran a la victoria."
+  },
+  {
+    "id": 16,
+    "categoria": "ruta",
+    "marca": "Trek",
+    "linea": "domane",
+    "modelo": "al3",
+    "stock": 13,
+    "precio": 4000000,
+    "img": "./src/assets/images/trek/16.jpg",
+    "detalle": "Bicicleta de ruta Trek Domane AL3, diseñada para confort y rendimiento en largas distancias. Con tecnología avanzada para absorber impactos y un diseño ergonómico, es ideal para ciclistas que buscan una experiencia de conducción suave."
+  },
+  {
+    "id": 17,
+    "categoria": "ruta",
+    "marca": "Trek",
+    "linea": "domane",
+    "modelo": "al2",
+    "stock": 9,
+    "precio": 3500000,
+    "img": "./src/assets/images/trek/17.jpg",
+    "detalle": "Bicicleta de ruta Trek Domane AL2, la solución perfecta para ciclistas recreativos. Con un enfoque en la comodidad y la durabilidad, es ideal para aquellos que buscan disfrutar de largos paseos sin comprometer el rendimiento."
+  },
+  {
+    "id": 18,
+    "categoria": "mtb",
+    "marca": "Trek",
+    "linea": "supercaliber",
+    "modelo": "9,7",
+    "stock": 7,
+    "precio": 5000000,
+    "img": "./src/assets/images/trek/18.jpg",
+    "detalle": "Bicicleta MTB Trek Supercaliber 9.7, la mejor opción para aquellos que buscan velocidad y control en terrenos técnicos. Con un diseño innovador y componentes de alta calidad, esta bicicleta es perfecta para ciclistas que desafían los límites en cada carrera."
+  }
+]
