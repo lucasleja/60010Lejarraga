@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import data from '../data/productos.json'
 
 export const ItemDetailsContainer = () => {
-  const [item, setItem] = useState([]);
+  const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const {id} = useParams();
@@ -22,7 +22,15 @@ export const ItemDetailsContainer = () => {
   
   if(loading) return "wait"
 
-  return <Container className='mt-4'>
-    <h1>Bicicleta {i.marca}</h1>
-    ITEM</Container>
-};
+  if (!item) return "Producto no encontrado";
+
+  return (
+    <Container className='mt-4'>
+            <h1>{item.marca} {item.modelo}</h1>
+            <img src={item.img} alt={item.marca} />
+            <p>{item.detalle}</p>
+            <p>Precio: ${item.precio}</p>
+            <p>Stock disponible: {item.stock}</p>
+        </Container>
+  );
+}

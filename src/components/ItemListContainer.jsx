@@ -28,7 +28,7 @@ export const ItemListContainer = () => {
 if (loading) return "wait";
 
     return  (
-    <Container className="mt-4 mt-4">
+    <Container className="mt-4">
       {items.map((i) => (
       <Card key={i.id} style={{ width: '18rem' }} className="mt-2">
       <Card.Img variant="top" src={i.img} />
@@ -37,8 +37,8 @@ if (loading) return "wait";
         <Card.Text>{i.detalle.substring (0, 60)+" ..."}
         </Card.Text>
         <Link to={`/item/${i.id}`}>
-        <Button variant="primary">Ver</Button>
-        </Link>
+<Button variant="primary">Ver</Button>
+</Link>
       </Card.Body>
     </Card> 
   ))}
