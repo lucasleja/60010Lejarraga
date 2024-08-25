@@ -3,8 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from 'react-bootstrap';
+import { getFirestore, getDocs, where, query, collection } from "firebase/firestore";
 
-import data from '../data/productos.json'
+/* import data from '../data/productos.json' */
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -13,6 +14,23 @@ export const ItemListContainer = () => {
   const {id} = useParams();
   
   useEffect(()=> {
+    const db = getFirestore();
+
+    const ref = collection(db, "items");
+
+    getDocs(ref)
+      .then((snapshot) => {
+        setItems(
+          snapshot.docs.map((doc) => {
+            return { id: doc.id, ...doc.data( ) };
+          })
+        );
+      })
+      .finally(() => setLoading(false));
+  }, [id]);
+
+
+  /* useEffect(()=> {
     new Promise((resolve, reject) => setTimeout(resolve(data), 2000))
     .then((response) => {
       if(!id) {
@@ -23,7 +41,8 @@ export const ItemListContainer = () => {
     }
   })
     .finally(() => setLoading(false));
-  }, [id]);
+  }, [id]); */
+
 
 if (loading) return "wait";
 
@@ -35,8 +54,8 @@ if (loading) return "wait";
       <Card key={i.id} style={{ width: '18rem' }} className="mt-2">
       <Card.Img variant="top" src={i.img} />
       <Card.Body>
-        <Card.Title>{i.marca}</Card.Title>
-        <Card.Text>{i.detalle.substring (0, 60)+" ..."}
+        <Card.Title>{i.brand}</Card.Title>
+        <Card.Text>{i.description.substring (0, 60)+" ..."}
         </Card.Text>
         <Link to={`/item/${i.id}`}>
 <Button variant="primary">Ver</Button>
@@ -48,3 +67,5 @@ if (loading) return "wait";
   </Row>
   </Container>
     );}
+
+    console.log
