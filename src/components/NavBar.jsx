@@ -14,7 +14,7 @@ export const NavBar = ()=> {
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/">BICI-MUNDO</Nav.Link>
             <Nav.Link as={NavLink} to="/category/mtb">MTB</Nav.Link>
-            <Nav.Link as={NavLink} to="/category/ruta">Ruta</Nav.Link>
+            <Nav.Link as={NavLink} to="/category/route">Ruta</Nav.Link>
             <Nav.Link as={NavLink} to="/category/elec">Eléctrica</Nav.Link>
           </Nav>
           <CartWidget />

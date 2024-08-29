@@ -5,8 +5,6 @@ import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from 'react-bootstrap';
 import { getFirestore, getDocs, where, query, collection } from "firebase/firestore";
 
-/* import data from '../data/productos.json' */
-
 export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -16,7 +14,12 @@ export const ItemListContainer = () => {
   useEffect(()=> {
     const db = getFirestore();
 
-    const ref = collection(db, "items");
+
+    const ref = !id 
+      ? collection(db, "productos")
+      : query(collection (db, "productos"), where("category", "==", id));
+
+
 
     getDocs(ref)
       .then((snapshot) => {
@@ -29,8 +32,33 @@ export const ItemListContainer = () => {
       .finally(() => setLoading(false));
   }, [id]);
 
+if (loading) return "Cargando...";
 
-  /* useEffect(()=> {
+    return  (
+    <Container className="mt-4 mb-4">
+      <Row>
+      {items.map((i) => (
+        <Col key={i.id} xs={12} sm={4} md={3} lg={2.4} xl={1.5}>
+      <Card key={i.id} style={{ width: '18rem' }} className="mt-2">
+      <Card.Img variant="top" src={i.img} />
+      <Card.Body>
+        <Card.Title>{i.brand} {i.model}</Card.Title>
+        <Card.Text>{i.description.substring (0, 60)+" ..."}
+        </Card.Text>
+        <Link to={`/item/${i.id}`}>
+<Button variant="primary">Ver</Button>
+</Link>
+      </Card.Body>
+    </Card> 
+    </Col>
+  ))}
+  </Row>
+  </Container>
+    );}
+
+
+
+      /* useEffect(()=> {
     new Promise((resolve, reject) => setTimeout(resolve(data), 2000))
     .then((response) => {
       if(!id) {
@@ -42,30 +70,3 @@ export const ItemListContainer = () => {
   })
     .finally(() => setLoading(false));
   }, [id]); */
-
-
-if (loading) return "wait";
-
-    return  (
-    <Container className="mt-4 mb-4">
-      <Row>
-      {items.map((i) => (
-        <Col key={i.id} xs={12} sm={4} md={3} lg={2.4} xl={1.5}>
-      <Card key={i.id} style={{ width: '18rem' }} className="mt-2">
-      <Card.Img variant="top" src={i.img} />
-      <Card.Body>
-        <Card.Title>{i.brand}</Card.Title>
-        <Card.Text>{i.description.substring (0, 60)+" ..."}
-        </Card.Text>
-        <Link to={`/item/${i.id}`}>
-<Button variant="primary">Ver</Button>
-</Link>
-      </Card.Body>
-    </Card> 
-    </Col>
-  ))};
-  </Row>
-  </Container>
-    );}
-
-    console.log
