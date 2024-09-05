@@ -5,8 +5,6 @@ import { ItemCount } from "./ItemCount";
 import { ItemsContext } from "../context/ItemsContext";
 import { Container, Card, ListGroup, Row, Col } from 'react-bootstrap';
 
-/* import { Container, Row, Col } from 'react-bootstrap'; */
-
 export const ItemDetailsContainer = () => {
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -52,14 +50,3 @@ export const ItemDetailsContainer = () => {
 </Container>
   );
 };
-
-
-
-{/* <Container className='mt-4'>
-        <h1>{item.brand} {item.line} {item.model}</h1>
-        <img src={item.img} alt={item.model} />
-        <p>{item.description}</p>
-        <p>Precio: ${item.price}</p>
-        <p>Stock disponible: {item.stock}</p>
-        <ItemCount stock={item.stock} onAdd={onAdd} />
-    </Container> */}

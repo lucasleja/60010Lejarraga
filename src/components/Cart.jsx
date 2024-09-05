@@ -122,12 +122,3 @@ export const Cart = () => {
     </Container>
   );
 };
-
-{/* <div key={item.id}>
-        <h1>{item.brand} {item.line} {item.model}</h1>
-        <img src={item.img} height={200} />
-        <p> Cantidad: {item.quantity}</p>
-        <Button variant="secondary"  size="sm"  onClick={() => removeItem(item.id)}>
-          Eliminar {item.line} {item.model}
-        </Button>
-      </div> */}
