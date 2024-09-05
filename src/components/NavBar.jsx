@@ -10,7 +10,6 @@ export const NavBar = ()=> {
   <>
   <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          {/* <Navbar.Brand href="#home">bikeworld</Navbar.Brand> */}
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/">BICI-MUNDO</Nav.Link>
             <Nav.Link as={NavLink} to="/category/mtb">MTB</Nav.Link>
